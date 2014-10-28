@@ -10,7 +10,7 @@
 
 @interface JJInsetLabel : UILabel
 
-@property (nonatomic, assign) UIEdgeInsets edgeInsets;
+@property (nonatomic, assign) UIEdgeInsets edgeInsets UI_APPEARANCE_SELECTOR;
 
 /// Set the height of the frame based on the text content within the given width
 - (void)fitToWidth:(CGFloat)width;
