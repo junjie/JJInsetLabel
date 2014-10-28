@@ -24,10 +24,46 @@
 	return self;
 }
 
+#pragma mark - UIAppearance
+
+- (void)setLabelFont:(UIFont *)labelFont
+{
+	self.font = labelFont;
+}
+
+- (void)setLabelBackgrondColor:(UIColor *)labelBackgrondColor
+{
+	self.backgroundColor = labelBackgrondColor;
+}
+
+- (void)setLabelTextColor:(UIColor *)labelTextColor
+{
+	self.textColor = labelTextColor;
+}
+
+- (UIFont *)labelFont
+{
+	return self.font;
+}
+
+- (UIColor *)labelBackgrondColor
+{
+	return self.backgroundColor;
+}
+
+- (UIColor *)labelTextColor
+{
+	return self.textColor;
+}
+
+#pragma mark - Drawing with Insets
+
 - (void)drawTextInRect:(CGRect)rect
 {
 	[super drawTextInRect:UIEdgeInsetsInsetRect(rect, self.edgeInsets)];
 }
+
+#pragma mark - Sizing with Insets
 
 - (CGSize)sizeThatFits:(CGSize)size
 {

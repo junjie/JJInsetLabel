@@ -12,6 +12,10 @@
 
 @property (nonatomic, assign) UIEdgeInsets edgeInsets UI_APPEARANCE_SELECTOR;
 
+@property (nonatomic, strong) UIFont *labelFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor *labelBackgrondColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIColor *labelTextColor UI_APPEARANCE_SELECTOR;
+
 /// Set the height of the frame based on the text content within the given width
 - (void)fitToWidth:(CGFloat)width;
 
