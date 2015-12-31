@@ -78,7 +78,7 @@
 	CGSize fittingSize = [self sizeThatFits:CGSizeMake(width, 0)];
 	CGRect frame = self.frame;
 	frame.size = fittingSize;
-	self.frame = frame;
+	self.frame = CGRectIntegral(frame);
 }
 
 // For auto-layout
